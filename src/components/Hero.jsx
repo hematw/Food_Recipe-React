@@ -18,7 +18,7 @@ export default function BackGlow() {
     })
 
     return (
-        <div className="w-full h-[70vh] flex flex-col md:flex-row md:justify-between items-center">
+        <div className="w-full py-16 flex flex-col md:flex-row md:justify-between items-center">
             <div class="hero-text md:w-1/2 text-center md:text-left mt-10 order-1 md:order-none">
                 <h1 className="text-2xl md:text-4xl">
                     Explore Delicious Recipes from Around the World with

@@ -34,7 +34,7 @@ function App() {
 
       <Header sendData={getDataFromSearch} />
 
-      <main className='h-3/4 px-8 py-12 sm:px-14 overflow-hidden'>
+      <main className='px-8 py-12 sm:px-14 overflow-hidden'>
         <Hero />
         {
           clickedMeal ? <Desc meal={clickedMeal} handleClose={wrapperClose} />
