@@ -26,7 +26,7 @@ export default function Header({ sendData }) {
     return (
         <header className="px-8 py-4 sm:px-14 flex justify-center md:justify-start items-center border-b border-gray-700 flex-wrap">
             <img className="w-14 md:w-16 bg-white rounded-full"
-                src="/src/assets/atom_food.png" alt="Atom Food Logo." />
+                src="/atom_food.png" alt="Atom Food Logo." />
 
             <div className="ml-6 ">
                 <h1 className="brand text-3xl font-semibold">Atom Foods</h1>
