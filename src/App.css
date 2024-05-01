@@ -32,8 +32,6 @@ body {
 }
 
 li::marker {
-    color: #61efff;
+    color: #1C8BFF;
     font-size: 1.2em;
 }
-
-/* #1E293B */

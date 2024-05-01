@@ -10,7 +10,7 @@ import './App.css';
 function App() {
   const [mealData, setMealData] = useState(null);
   const [clickedMeal, setClickedMeal] = useState(null);
-  const mt8Ref = useRef(null); // Ref for the div with class "mt-8"
+  const recipes = useRef(null); // Ref for the div with class "mt-8"
 
   function getDataFromSearch(data) {
     setMealData(data);
@@ -26,8 +26,8 @@ function App() {
 
   useEffect(() => {
     // Scroll to the div with class "mt-8" when mealData is rendered
-    if (mealData && mt8Ref.current) {
-      mt8Ref.current.scrollIntoView({ behavior: 'smooth' });
+    if (mealData && recipes.current) {
+      recipes.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, [mealData]);
 
@@ -42,7 +42,7 @@ function App() {
           <Desc meal={clickedMeal} handleClose={wrapperClose} />
         ) : (
           mealData && (
-            <div className='mt-8' ref={mt8Ref}>
+            <div className='mt-8 recipes' ref={recipes}>
               <h1 className='text-3xl text-center'>Search results</h1>
               <div className='mt-8 py-6 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-14'>
                 {mealData.map(meal => (
