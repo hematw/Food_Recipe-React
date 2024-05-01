@@ -1,16 +1,39 @@
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Alegreya Sans SC", sans-serif;
     background-color: #10182B;
+    min-height: 100vh;
 }
 
 .brand {
     background: hsla(217, 100%, 50%, 1);
 
-background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);    background-clip: text;
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background-clip: text;
     color: transparent;
 }
 
 .glowing {
     background: hsla(24, 100%, 52%, 1);
     background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    z-index: -1;
 }
+
+.overlay {
+    background: linear-gradient(0deg, #000000d1 0%, #00000075 70%, transparent 100%);
+}
+
+.bg-img{
+    transition: all .1s linear;
+}
+
+.card:hover .bg-img {
+    filter: blur(20px);
+    background-image: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+}
+
+li::marker {
+    color: #61efff;
+    font-size: 1.2em;
+}
+
+/* #1E293B */
